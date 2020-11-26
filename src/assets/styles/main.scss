@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+@import "fonts";
+@import "nullstyle";
+@import "variables";
+@import "mixins";
+
+body {
+  font-family: 'Conv_Judson', sans-serif;
+  font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Quando', serif;
+  font-size: 50px;
+  margin-bottom: 10px;
+}

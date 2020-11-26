@@ -1,5 +1,19 @@
-Задачи 
-    1) создать библиотеку компонентов на VUE
-    2) библиотеку адаптивных шаблонов на HTML SCSS
-    3) библиотеку mixins для SCSS
-    4) ...
+# vue-start-template
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
