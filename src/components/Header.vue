@@ -12,11 +12,29 @@
       </ul>
     </div>
     <p class="navbar-date">
-      здесь будет текущая дата и время
+      {{date}}
     </p>
   </header>
 </template>
 
+
+<script>
+export default {
+  data() {
+    return {
+      date: new Date(),
+      interval: null,
+    }
+  },
+
+  mounted() {
+    this.interval = setInterval(() => {
+      this.date = new Date()
+    }, 1000)
+  }
+}
+
+</script>
 
 <style lang="scss">
   .navbar {
