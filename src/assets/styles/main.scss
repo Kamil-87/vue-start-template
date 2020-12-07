@@ -5,6 +5,7 @@
 @import "mixins";
 
 body {
+  height: 100%;
   font-family: 'Conv_Judson', sans-serif;
 }
 
@@ -19,3 +20,35 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jc {
+  &sb {
+    justify-content: space-between;
+  }
+  &sa {
+    justify-content: space-around;
+  }
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+
+.tal {
+  text-align: left;
+}

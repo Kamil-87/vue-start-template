@@ -1,18 +1,37 @@
 <template>
   <div id="app">
-
-    <router-view/>
+    <Header />
+    <Main class="main"/>
+    <Footer />
   </div>
 </template>
 
+<script>
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Main from "@/layouts/Main";
+export default {
+  components: {Main, Footer, Header}
+}
+</script>
+
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
+.header {
+  flex: 0 0 auto;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
 
 </style>
