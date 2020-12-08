@@ -37,18 +37,31 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+.p {
+  padding: 10px;
+}
+
 .mb10 {
   margin-bottom: 10px;
 }
 .mb20 {
   margin-bottom: 20px;
 }
+.mt20 {
+  margin-top: 20px;
+}
 
 .fs20 {
   font-size: 20px;
 }
-
+.fgrey {
+  color: gray;
+}
 
 .tal {
   text-align: left;
+}
+
+.border1 {
+  border: 1px solid green;
 }
