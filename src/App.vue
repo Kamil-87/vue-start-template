@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Main class="main"/>
+    <Main class="wrapper-main"/>
     <Footer />
   </div>
 </template>
@@ -22,12 +22,8 @@ export default {
   height: 100%;
 }
 
-.main {
+.wrapper-main {
   flex: 1 0 auto;
-}
-
-.footer {
-  flex: 0 0 auto;
 }
 
 </style>

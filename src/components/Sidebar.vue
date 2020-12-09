@@ -1,6 +1,6 @@
 <template>
-  <aside class="container-fluid">
-    <form role="search" class="bd-search d-flex align-items-center">
+  <aside>
+    <form role="search" class="bd-search d-flex f-aic p10 mb10">
       <label for="search">
         <input type="text" id="search" name="search" placeholder="Search">
       </label>
@@ -27,20 +27,13 @@
 <style lang="scss">
 
 aside {
-  background: rgba(0, 0, 0, .5);
+  border-right: 1px solid grey;
   display: flex;
   flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  top: 4rem;
-  z-index: 1000;
+  padding-top: 4rem;
+  height: 100vh;
 }
 
 </style>
-<template>
-  <aside class="sidebar">
-    <ul>
-      <li></li>
-    </ul>
-  </aside>
-</template>
