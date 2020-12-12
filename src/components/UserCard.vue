@@ -45,7 +45,6 @@
 
       <button
           type="button"
-
           @click="currentPage++"
       >
         next

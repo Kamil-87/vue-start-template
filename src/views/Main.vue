@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="d-flex">
+    <div class="d-flex mlminus15 mrminus15">
       <Sidebar class="sidebar"></Sidebar>
       <div class="main">
         <UserCard />
@@ -11,6 +11,9 @@
           <InputRadio
             v-for="(item, i) in radios"
             :key="i"
+            :label="item.title"
+            name="radio"
+            :uniq="'radio_' + item.id"
           />
         </div>
       </div>
@@ -38,7 +41,9 @@ export default {
   data: () => ({
     radios: [
       {id: 1, title: 'Текст radio кнопки №1' },
-      {id: 2, title: 'Текст radio кнопки №2' }
+      {id: 2, title: 'Текст radio кнопки №2' },
+      {id: 3, title: 'Текст radio кнопки №3' },
+      {id: 4, title: 'Текст radio кнопки №4' },
     ]
   })
 }
@@ -47,6 +52,7 @@ export default {
 <style lang="scss">
 .sidebar {
   order: 0;
+  max-width: 25%;
 }
 
 .main {

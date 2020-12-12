@@ -6,21 +6,8 @@
           :name="name"
           :id="uniq"
            />
-      <label :for="uniq">Текст radio кнопки №1</label>
+      <label :for="uniq">{{ label }}</label>
     </div>
-
-<!--    <div>
-      <input type="radio" name="option" id="radio2" />
-      <label for="radio2">radio кнопка №2</label>
-    </div>
-    <div>
-      <input type="radio" name="option" id="radio3" />
-      <label for="radio3">Еще текст radio кнопки №3</label>
-    </div>
-    <div>
-      <input type="radio" name="option" id="radio4" />
-      <label for="radio4">radio №4</label>
-    </div>-->
 
   </div>
 </template>
