@@ -7,6 +7,9 @@
       <li class="navbar-list">
         <router-link to="/about" class="navbar-link">About</router-link>
       </li>
+      <li class="navbar-list">
+        <router-link to="/products" class="navbar-link">Products</router-link>
+      </li>
     </ul>
   </div>
 </template>

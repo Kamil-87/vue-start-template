@@ -1,31 +1,52 @@
 <template>
-<div class="container-fluid search mt20 border1 p10">
-  <input type="text" @input="searchText=$event.target.value" class="border1">
-  <p>Всего имен: {{users.length}}</p>
-  <p>Совпадений: {{getFilteredNames.length}}</p>
-  <ul class="mt20">
-    <li
-      class="user-list fgrey"
-      v-for="(user, i) in getFilteredNames"
-      :key="i"
+<div class="d-flex f-aie search">
+  <label for="id-search">
+    <input
+        type="text"
+        id="id-search"
+        v-model="searchText"
     >
-      {{user}}
-    </li>
-  </ul>
+  </label>
+  <button
+      type="button"
+      @click="$emit('search', searchText)"
+  >
+    Найти
+  </button>
 </div>
 </template>
 
 <script>
 export default {
-  data: () => ({
-    searchText: '',
-    users: ['Камиль', 'Ринат', 'Виталий', 'Динис', 'Данил', 'Дим'],
-  }),
-
-  computed: {
-    getFilteredNames() {
-      return this.users.filter(user => user.toLowerCase().includes(this.searchText.toLowerCase()))
+  name: 'Search',
+  data() {
+    return {
+      searchText: ''
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.search {
+  input {
+    height: 25px;
+    margin-left: 40px;
+    border-bottom: 1px solid red;
+    padding: 5px;
+    margin-right: 5px;
+  }
+
+  button {
+    background-color: rgb(221, 56, 56);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 14px;
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+
+</style>
